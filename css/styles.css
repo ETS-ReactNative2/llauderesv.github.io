@@ -27,7 +27,6 @@ body {
 
 .full-width-header {
   	width:100%;
-  	height:100%;
   	height: calc(100% - 1px);
   	background-image: url('../images/banner.png');
    	background-size: cover;
@@ -42,26 +41,33 @@ body {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
 #heading_hello {
 	color: #FFF;
-	font-family: ProximaNovaRegular; 
-	font-weight: 500; 
+	font-family: ProximaNovaRegular;
+	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 7em;
 }
 
 #heading_pro {
-	font-family: ProximaNovaRegular; 
-	font-weight: 500; 
-	color: #3A7563;
+	font-family: ProximaNovaRegular;
+	font-weight: 500;
+	color: #4CAF50;
+	//opacity: 0;
 	font-size: 7em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	transition: all .5s ease-in-out;
+}
+
+.add_opacity {
+	opacity: 1 !important;
+	transition: all .5s ease-in-out;
 }
 
 #slider {
@@ -69,11 +75,15 @@ body {
 }
 
 #navigation_bar {
-	transition: all 0.4s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+#navigation_list > li {
+	margin-right: 5px;
 }
 
 #navigation_list {
-	transition: all 0.4s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 
 #navigation_list > li > a {
@@ -81,17 +91,18 @@ body {
   	display: block;
   	padding: 10px 15px;
   	border: 1px solid transparent;
+	border-radius: 0px !important;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	transition: all 0.4s ease-in-out;
 }
 
+
 #navigation_list > li > .hover_a:hover,
 #navigation_list > li > .hover_a:focus {
   	text-decoration: none;
-  	background-color: transparent;
-  	border: 1px solid #FFF;
-	color: #FFF;
+  	background-color: #FFF;
+	color: #000;
 }
 
 .navigation_list_padding {
@@ -108,19 +119,32 @@ body {
 }
 
 #my_pic {
-	border-radius: 50%;
+	border-radius: 999px;
 	height: 250px;
-	margin: 50px;
+	margin-right: 40px;
+	-webkit-filter: grayscale(100%);
+	transition: all 0.4s ease-in-out;
+	float: left;
+	border: 5px solid #bababa;
+}
+
+/*#my_pic:hover {
+	-webkit-filter: grayscale(0%);
+	transition: all 0.4s ease-in-out;
+}*/
+
+.my_pic_hover {
+	-webkit-filter: grayscale(0%) !important;
 }
 
 .heading_list {
-	font-family: ProximaNovaRegular; 
+	font-family: ProximaNovaRegular;
 	font-size: 4em;
 	text-transform: uppercase;
 }
 
 .heading_list_two {
-	font-family: ProximaNovaRegular; 
+	font-family: ProximaNovaRegular;
 	font-size: 4em;
 	text-transform: uppercase;
 	color: #FFF;
@@ -130,10 +154,13 @@ section {
 	margin-top: 200px;
 }
 
-#p_about {
-	font-family: OpenSansLight; 
-	font-size: 1.1em;
+#about_met_text {
+	font-family: 'Century gothic';
+	font-size: 1.3em;
+	text-align: justify;
 	line-height: 35px;
+	font-weight: 100;
+	color: #013c09;
 }
 
 #navigation_bar {
@@ -143,26 +170,25 @@ section {
 
 .shrink {
   min-height: 35px;
-  background-color: #3A7563;
+  background-color: #4CAF50;
+  border-bottom: 2px solid #333;
 }
 
 #a_works {
-	font-family: ProximaNovaRegular; 
-	font-size: 20px;
+	font-family: ProximaNovaRegular;
 	width: 250px;
 	text-transform: uppercase;
 	padding: 15px 10px 15px 10px;
 	text-decoration: none;
 	border: 1px solid #FFF;
 	color: #FFF;
-	border-radius: 3px;
+	border-radius: 0px;
 	margin-top: 20px;
-   -webkit-transition: all 0.4s ease;
-   transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 #a_works:hover {
-	background-color: #3A7563;
+	background-color: #124435;
    -webkit-transition: all 0.4s ease;
    transition: all 0.4s ease;
 }
@@ -176,12 +202,18 @@ section {
 	color: #3A7563;
 }
 
-#skills_row {
-	margin-top: 200px; 
+
+#skills_row{
 	background-color: #e4e4e4;
+	margin-top: 200px;
 	color: #000;
 	padding-top: 50px;
 }
+
+#about_row {
+	color: #000;
+	padding-top: 50px;
+} 
 
 #my_work {
 	text-align:center;

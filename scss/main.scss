@@ -1,0 +1,392 @@
+$primary-color: #2196F3;
+$dark-color: #0D47A1;
+
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #f3f3f3;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+@font-face {
+   font-family: ProximaNovaLight;
+   src: url('../fonts/ProximaNova-Light.otf');
+}
+
+@font-face {
+   font-family: ProximaNovaRegular;
+   src: url('../fonts/ProximaNova-Regular.otf');
+}
+
+@font-face {
+   font-family: OpenSansLight;
+   src: url('../fonts/OpenSans_Light_0.ttf');
+}
+
+.full-width-header {
+  	width:100%;
+  	height: calc(100% - 1px);
+  	background-image: url('../images/banner.png');
+   	background-size: cover;
+  	background-attachment: fixed;
+   	background-position: center;
+   	background-repeat: no-repeat;
+}
+
+#container_text {
+    position: absolute;
+	margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+@mixin font-style($color, $font-size, $letter-spacing) {
+	font-family: ProximaNovaRegular;
+	font-weight: 500;
+	color: $color;
+	font-size: $font-size;
+	text-transform: uppercase;
+	letter-spacing: $letter-spacing;
+}
+
+#heading_hello {
+	// Inherited the font style method...
+	@include font-style(#FFF, 7em, 2px);
+}
+
+#heading_pro {
+	// Inherited the font style method...
+	@include font-style($primary-color, 7em, 2px);
+	transition: all .5s ease-in-out;
+}
+
+.add_opacity {
+	opacity: 1 !important;
+	transition: all .5s ease-in-out;
+}
+
+#slider {
+	transition: all 1s ease-in-out;
+}
+
+#navigation_bar {
+	transition: all 1s ease-in-out;
+}
+
+#navigation_list {
+
+	transition: all 1s ease-in-out;
+
+	li {
+
+		margin-right: 5px;
+
+	}
+}
+
+.shrink {
+  min-height: 35px;
+  background-color: $primary-color;
+  border-bottom: 2px solid $dark-color !important;
+}
+
+@mixin link-style($text-color, $bg-color) {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	border: 1px solid transparent;
+	border-radius: 0px !important;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	transition: all 0.4s ease-in-out;
+
+
+	&:hover {
+		text-decoration: none !important;
+		background-color: $bg-color !important;
+		color: $text-color !important;
+	}
+	&:focus {
+		text-decoration: none !important;
+		background-color: $bg-color !important;
+		color: $text-color !important;
+	}
+	&:active {
+		color: $text-color !important;
+	}
+}
+
+.hover_a {
+
+	// Extending the link-style...
+	@include link-style(#FFF, $primary-color);
+}
+
+.hover_b {
+  	
+	// Extending the link-style...
+	@include link-style(#000, #FFF);
+}
+
+
+.navigation_list_padding {
+	padding-top: 10px;
+	transition: all 0.1s ease-in-out;
+}
+
+.navbar-toggle {
+	background-color: #FFF;
+}
+
+.icon-bar {
+	background-color: #333;
+}
+
+#my_pic {
+	transition: all 0.4s ease-in-out;
+	float: left;
+	-webkit-filter: grayscale(100%);
+	margin-right: 20px;
+	border-radius: 999px;
+}
+
+.my_pic_hover {
+	-webkit-filter: grayscale(0%) !important;
+}
+
+#my_name {
+	font-size: 2em;
+	font-weight: 600;
+	font-family: ProximaNovaRegular;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	float: left; 
+	background-color: #000; 
+	color: #FFF; 
+	padding: 15px;
+}
+
+#about_met_text {
+	font-family: 'Century gothic';
+	font-size: 1.3em;
+	text-align: justify;
+	line-height: 35px;
+	font-weight: 100;
+	float: left;
+}
+
+/*#my_pic:hover {
+	-webkit-filter: grayscale(0%);
+	transition: all 0.4s ease-in-out;
+}*/
+
+
+.heading_list {
+	// Inherited the font style method...
+	@include font-style(#333, 4em, 0px);
+}
+
+section {
+	margin-top: 10px;
+}
+
+
+#navigation_bar {
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+#a_works {
+	font-family: ProximaNovaRegular;
+	width: 250px;
+	text-transform: uppercase;
+	padding: 15px 10px 15px 10px;
+	text-decoration: none;
+	border: 1px solid #FFF;
+	color: #FFF;
+	border-radius: 0px;
+	margin-top: 20px;
+	-webkit-transition: all 0.4s ease;
+
+    &:hover {
+		background-color: $primary-color;
+	    -webkit-transition: all 0.4s ease;
+	    transition: all 0.4s ease;
+    }
+}
+
+#qoute {
+	font-family: ProximaNovaLight;
+	font-weight: 500;
+	color: #CCC;
+	font-size: 20px;
+	#author {
+		float:right;
+	}
+}
+
+.green {
+	color: $primary-color;
+}
+
+.p_description {
+	font-size: 15px;
+}
+
+// #skills_row{
+// 	background-color: #e4e4e4;
+// 	margin-top: 200px;
+// 	color: #000;
+// 	padding-top: 50px;
+// }
+
+#about_row {
+	color: #000;
+	padding-top: 50px;
+} 
+
+#my_work {
+	text-align:center;
+	margin-top: 150px;
+}
+
+.circle-text {
+	font-size: 15px;
+}
+
+@mixin skills_background($url, $bg-color, $bg-size) {
+  	background-image: url($url);
+  	background-position: center;
+   	background-repeat: no-repeat;
+	background-color: $bg-color; 
+  	background-size: $bg-size;
+	height: 550px;
+}
+
+@mixin skills_h1($font-color) {
+	margin-top: 150px;
+	text-align: center;
+	font-family: ProximaNovaRegular;
+	color: $font-color; 
+	font-size: 3em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#skills_android {
+	
+	// Inherit the skills background method...
+	@include skills_background('../images/android_dev.png', $primary-color, 45%);
+
+  	h1 {
+  		@include skills_h1(#FFF);
+  	}
+
+	p {
+		padding: 10px 60px 0px 60px;
+		margin-top: 50px;
+		text-align: center;
+		font-family: 'Century gothic';
+		color: #FFF; 
+		font-size: 1.5em;
+	}
+}
+
+#skills_web {
+
+	// Inherit the skills background method...
+	@include skills_background('../images/web_dev.png', #FFF, 80%);
+
+	h1 {
+  		@include skills_h1(#393939);
+  	}
+
+	p {
+		padding: 10px 60px 0px 60px;
+		margin-top: 50px;
+		text-align: center;
+		font-family: 'Century gothic';
+		color: #393939; 
+		font-size: 1.5em;
+	}
+
+}
+
+#skills_ios {
+
+	// Inherit the skills background method...
+	@include skills_background('../images/ios_dev.png', #FFF, 60%);
+
+	h1 {
+  		@include skills_h1(#393939);
+  	}
+
+	p {
+		padding: 10px 60px 0px 60px;
+		margin-top: 50px;
+		text-align: center;
+		font-family: 'Century gothic';
+		color: #393939; 
+		font-size: 1.5em;
+	}
+}
+
+#skills_git {
+
+	// Inherit the skills background method...
+	@include skills_background('../images/git_dev.png', $primary-color, 50%);
+
+	h1 {
+  		@include skills_h1(#FFF);
+  	}
+
+	p {
+		padding: 10px 60px 0px 60px;
+		margin-top: 50px;
+		text-align: center;
+		font-family: 'Century gothic';
+		color: #FFF; 
+		font-size: 1.5em;
+	}
+}
+
+#scroll_down {
+	z-index: 99999;
+	position: fixed; 
+	top: 80%; 
+	left: 50%; 
+	transform: translate(-50%, 0%);
+	transition: all 0.4s ease-in-out;
+	border-radius: 50%;
+	height: 60px;
+}
+
+@keyframes example {
+  from {
+	transform: rotateY(90deg);
+  }
+  to {
+	transform: rotateY(10deg);
+  }
+}
+
+.animate_row_class {
+	animation-name: example;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+	//transform: scale(1.1,2);
+	transition: all 0.4s ease-in-out;
+}
+
+.animate_row {
+	//display: none;
+}
