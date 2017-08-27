@@ -145,11 +145,14 @@ body {
 
 #about_met_text {
   font-family: ProximaNovaRegular;
-  font-size: 1.3em;
+  font-size: 1.5em;
   text-align: justify;
-  line-height: 35px;
+  line-height: 40px;
   font-weight: 100;
-  float: left; }
+  float: left;
+  position: relative;
+  top: 20%;
+  transform: translateY(20%); }
 
 /*#my_pic:hover {
 	-webkit-filter: grayscale(0%);
@@ -323,5 +326,46 @@ section {
   animation-duration: 0.4s;
   animation-iteration-count: 1;
   transition: all 0.4s ease-in-out; }
+
+@media screen and (max-width: 480px) {
+  #container_text {
+    font-size: 0.4em; }
+
+  #qoute {
+    font-size: 15px; }
+    #qoute #author {
+      float: right; }
+
+  .heading_list {
+    font-size: 3em; }
+
+  #h1_skills {
+    margin-top: 150px; }
+
+  #div_name {
+    margin-bottom: 0px !important;
+    font-size: 0.8em !important; }
+
+  #my_pic {
+    position: relative;
+    top: 20%;
+    margin-top: 150px !important; }
+
+  .skills_heading {
+    padding-top: 20px;
+    font-size: 2.5em !important;
+    margin-top: 0px !important; }
+
+  .animate_row p {
+    padding: 0px !important;
+    font-size: 15px !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+
+  #about_met_text {
+    font-size: 15px !important;
+    text-align: center;
+    line-height: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
