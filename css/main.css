@@ -132,16 +132,20 @@ body {
 .my_pic_hover {
   -webkit-filter: grayscale(0%) !important; }
 
-#my_name {
-  font-size: 2em;
-  font-weight: 600;
-  font-family: ProximaNovaRegular;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  float: left;
-  background-color: #000;
-  color: #FFF;
-  padding: 15px; }
+#div_name {
+  position: relative;
+  margin-bottom: 130px; }
+  #div_name #my_fname, #div_name #my_lname {
+    margin-top: 20px;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: ProximaNovaRegular;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    float: left;
+    background-color: #000;
+    color: #FFF;
+    padding: 15px; }
 
 #about_met_text {
   font-family: ProximaNovaRegular;
@@ -227,8 +231,7 @@ section {
     font-family: ProximaNovaRegular;
     color: #FFF;
     font-size: 3em;
-    font-weight: 700;
-    text-transform: uppercase; }
+    font-weight: 700; }
   #skills_android p {
     padding: 10px 60px 0px 60px;
     margin-top: 50px;
@@ -250,8 +253,7 @@ section {
     font-family: ProximaNovaRegular;
     color: #393939;
     font-size: 3em;
-    font-weight: 700;
-    text-transform: uppercase; }
+    font-weight: 700; }
   #skills_web p {
     padding: 10px 60px 0px 60px;
     margin-top: 50px;
@@ -273,8 +275,7 @@ section {
     font-family: ProximaNovaRegular;
     color: #393939;
     font-size: 3em;
-    font-weight: 700;
-    text-transform: uppercase; }
+    font-weight: 700; }
   #skills_ios p {
     padding: 10px 60px 0px 60px;
     margin-top: 50px;
@@ -296,8 +297,7 @@ section {
     font-family: ProximaNovaRegular;
     color: #FFF;
     font-size: 3em;
-    font-weight: 700;
-    text-transform: uppercase; }
+    font-weight: 700; }
   #skills_git p {
     padding: 10px 60px 0px 60px;
     margin-top: 50px;
@@ -311,10 +311,10 @@ section {
   position: fixed;
   top: 80%;
   left: 50%;
-  transform: translate(-50%, 0%);
-  transition: all 0.4s ease-in-out;
+  height: 60px;
   border-radius: 50%;
-  height: 60px; }
+  transform: translate(-50%, 0%);
+  transition: all 0.4s ease-in-out; }
 
 @keyframes example {
   from {
@@ -357,8 +357,9 @@ section {
     margin-top: 0px !important; }
 
   .animate_row p {
+    font-size: 20px !important;
+    line-height: 35px !important;
     padding: 0px !important;
-    font-size: 15px !important;
     position: absolute;
     top: 50%;
     transform: translateY(-50%); }
@@ -366,6 +367,11 @@ section {
   #about_met_text {
     font-size: 15px !important;
     text-align: center;
-    line-height: 30px; } }
+    line-height: 30px; }
+
+  #my_lname {
+    position: absolute;
+    left: 160px !important;
+    top: 0 !important; } }
 
 /*# sourceMappingURL=main.css.map */
