@@ -1,0 +1,19 @@
+.arrow-next {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: 1px solid rgb(56, 56, 56);
+
+  &:hover {
+    background-color: #e2e2e2;
+  }
+}
+
+.arrow-next-img {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
