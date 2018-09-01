@@ -1,15 +1,10 @@
 {
-  "main.js": "static/js/main.749b6776.js",
-  "main.js.map": "static/js/main.749b6776.js.map",
-  "static/media/About.scss": "static/media/About.3e22b5fb.scss",
-  "static/media/Accordion.scss": "static/media/Accordion.bae343d0.scss",
-  "static/media/App.scss": "static/media/App.84c69807.scss",
-  "static/media/ArrowNext.scss": "static/media/ArrowNext.67788458.scss",
-  "static/media/Blogs.scss": "static/media/Blogs.1a915459.scss",
-  "static/media/Home.scss": "static/media/Home.ec5a5409.scss",
-  "static/media/Skills.scss": "static/media/Skills.dd93ce1a.scss",
+  "main.css": "static/css/main.527d24d6.css",
+  "main.css.map": "static/css/main.527d24d6.css.map",
+  "main.js": "static/js/main.8e98871c.js",
+  "main.js.map": "static/js/main.8e98871c.js.map",
+  "static/media/HelveticaNeueLt.ttf": "static/media/HelveticaNeueLt.bb5671ed.ttf",
   "static/media/fb.svg": "static/media/fb.1215dfaf.svg",
-  "static/media/index.scss": "static/media/index.794c3eb7.scss",
   "static/media/linkedin.svg": "static/media/linkedin.5b09757f.svg",
   "static/media/twitter.svg": "static/media/twitter.534b5730.svg"
 }
