@@ -1,0 +1,13 @@
+@import '../../../css/baseColor';
+
+.blog-items {
+  cursor: pointer;
+  padding: 0px 0px 20px 0px;
+
+  .bottom-border {
+    width: 50%;
+    height: 1px;
+    margin-top: 10px;
+    background-color: $secondaryColor;
+  }
+}

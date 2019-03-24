@@ -1,0 +1,16 @@
+@import '../../css/baseColor';
+
+.lists {
+  .bottom-border {
+    visibility: hidden;
+    width: 50%;
+    height: 5px;
+    margin-top: 10px;
+    background-color: #ccc;
+  }
+
+  &:hover > .bottom-border {
+    // background-color: #ccc;
+    visibility: visible;
+  }
+}
