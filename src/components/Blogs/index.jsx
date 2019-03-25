@@ -3,7 +3,7 @@ import fetch from 'rss-to-json';
 
 // Components
 import withLoader from '../Loader';
-import List from './List/List';
+import List from './List';
 
 import './index.scss';
 

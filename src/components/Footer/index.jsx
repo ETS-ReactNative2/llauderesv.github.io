@@ -10,7 +10,7 @@ const Footer = ({ links }) => {
 
   return (
     <footer>
-      <p>Have any question? contact me on.</p>
+      <p>Hire me? Contact me on</p>
       <ul>{footerLinks}</ul>
       <p>Created by Vince Llauderes.</p>
     </footer>
