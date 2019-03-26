@@ -1,13 +1,12 @@
 .home {
+  text-align: center;
   h1 {
     font-size: 5em !important;
-    text-align: center;
     margin: 0;
   }
 
-  p {
-    text-align: center;
+  small {
+    padding: 5px;
     margin: 0;
-    color: #717171;
   }
 }

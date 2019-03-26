@@ -8,7 +8,7 @@ const Home = _ => {
       <h1 id="name" className="page-title">
         Hi I'm Vince.
       </h1>
-      <p>"Less is more. Simple is always better"</p>
+      <small className="highlight-text">Less is more. Simple is always better.</small>
     </div>
   );
 };

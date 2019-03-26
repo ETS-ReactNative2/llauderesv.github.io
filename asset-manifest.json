@@ -1,9 +1,10 @@
 {
-  "main.css": "static/css/main.861f2952.css",
-  "main.css.map": "static/css/main.861f2952.css.map",
-  "main.js": "static/js/main.d8bb92c1.js",
-  "main.js.map": "static/js/main.d8bb92c1.js.map",
-  "static/media/HelveticaNeueLt.ttf": "static/media/HelveticaNeueLt.bb5671ed.ttf",
+  "main.css": "static/css/main.fd38308b.css",
+  "main.css.map": "static/css/main.fd38308b.css.map",
+  "main.js": "static/js/main.ab97d3c9.js",
+  "main.js.map": "static/js/main.ab97d3c9.js.map",
+  "static/media/SF-Pro-Display-Light.otf": "static/media/SF-Pro-Display-Light.0bab02e9.otf",
+  "static/media/SF-Pro-Display-Regular.otf": "static/media/SF-Pro-Display-Regular.ae18f767.otf",
   "static/media/fb.svg": "static/media/fb.1215dfaf.svg",
   "static/media/linkedin.svg": "static/media/linkedin.5b09757f.svg",
   "static/media/twitter.svg": "static/media/twitter.534b5730.svg"

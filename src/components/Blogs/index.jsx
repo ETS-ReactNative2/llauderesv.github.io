@@ -3,11 +3,11 @@ import fetch from 'rss-to-json';
 
 // Components
 import withLoader from '../Loader';
-import List from './List';
+import BlogList from './BlogList';
 
 import './index.scss';
 
-const BlogListWithLoader = withLoader(List);
+const BlogListWithLoader = withLoader(BlogList);
 
 const Blogs = _ => {
   const { blogs, isLoading, error } = useFetchMediumPost();
